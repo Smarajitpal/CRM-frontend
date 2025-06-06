@@ -10,7 +10,7 @@ function Home() {
   const { leads } = useSelector((state) => state.leads);
   useEffect(() => {
     dispatch(fetchLeads());
-  });
+  }, [dispatch]);
   return (
     <div className="container">
       <div>
