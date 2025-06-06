@@ -1,0 +1,280 @@
+.container {
+  margin: 0rem 10rem;
+}
+.heading {
+  color: goldenrod;
+  background-color: aliceblue;
+  text-align: center;
+  font-size: 4rem;
+}
+.heading-2 {
+  color: blueviolet;
+  font-size: 3rem;
+  margin-top: 0px;
+}
+.heading-3 {
+  color: #007bff;
+  font-size: 2rem;
+}
+.h-extra {
+  padding-top: 2.5rem;
+}
+.body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.left-section {
+  width: 30%;
+}
+.content {
+  width: 70%;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: first baseline;
+}
+.list-btn {
+  font-weight: bolder;
+  font-size: large;
+  color: sandybrown;
+  background-color: azure;
+  padding: 11px 1rem;
+  margin: 1rem;
+  border: 1px solid brown;
+  border-radius: 8px;
+}
+:hover.list-btn {
+  color: azure;
+  background-color: sandybrown;
+  border: none;
+}
+.addBtn {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: large;
+  color: white;
+  background-color: green;
+  padding: 10px 1rem;
+  margin: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+:hover.addBtn {
+  color: green;
+  background-color: white;
+  border: 1px solid black;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.input {
+  height: 3rem;
+  width: 100%;
+  border: 1px solid brown;
+  border-radius: 8px;
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+.input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px blueviolet;
+}
+.error-text {
+  color: red;
+  font-size: 1.5rem;
+}
+.success-text {
+  color: green;
+  font-size: 1.5rem;
+}
+.list-item {
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: chocolate;
+}
+.link-item {
+  list-style: none;
+  border: 1px solid plum;
+  margin-bottom: 1.5rem;
+  width: 40%;
+  margin-right: 3rem;
+  padding-left: 1rem;
+}
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.col {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.d-text {
+  font-size: 2rem;
+  color: dimgray;
+}
+.c-text {
+  font-size: 1.5rem;
+  color: grey;
+}
+.cancelBtn {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: large;
+  color: white;
+  background-color: red;
+  padding: 10px 1rem;
+  margin: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+:hover.cancelBtn {
+  color: red;
+  background-color: white;
+  border: 1px solid black;
+}
+.filter {
+  height: 2rem;
+  width: 40%;
+  border: 1px solid lightsalmon;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+.filter:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px blue;
+}
+.pie {
+  width: 700px;
+  height: 700px;
+}
+.bar {
+  width: 1100px;
+  height: 700px;
+}
+.newLink {
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+  .heading-2 {
+    color: blueviolet;
+    font-size: 2rem;
+    margin-top: 0px;
+  }
+  .heading-3 {
+    color: #007bff;
+    font-size: 1.5rem;
+  }
+  .input {
+    height: 1.5rem;
+    width: 20rem;
+    border: 1px solid brown;
+    border-radius: 5px;
+    margin: 1rem;
+    font-size: 1rem;
+  }
+  .container {
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .link-item {
+    width: 100%;
+  }
+  .filter {
+    width: 90%;
+  }
+  .list-btn {
+    font-weight: bolder;
+    font-size: 12px;
+    color: sandybrown;
+    background-color: azure;
+    padding: 11px 1rem;
+    margin: 1rem;
+    border: 1px solid brown;
+    border-radius: 8px;
+  }
+  .pie {
+    width: 400px;
+    height: 400px;
+  }
+  .bar {
+    width: 500px;
+    height: 300px;
+  }
+  .addBtn {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 12px;
+    color: white;
+    background-color: green;
+    padding: 8px 6px;
+    margin: 0 1rem;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+  .cancelBtn {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 12px;
+    color: white;
+    background-color: red;
+    padding: 8px 6px;
+    margin: 0 1rem;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+  .error-text {
+    color: red;
+    font-size: 1rem;
+  }
+  .success-text {
+    color: green;
+    font-size: 1rem;
+  }
+  .d-text {
+    font-size: 1.5rem;
+    color: dimgray;
+  }
+  .c-text {
+    font-size: 1rem;
+    color: grey;
+  }
+  .list-item {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1rem;
+    font-style: italic;
+    color: chocolate;
+  }
+}
