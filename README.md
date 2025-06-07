@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+ZENTACT
+This is a CRM app for leads management.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hosted Link
+https://crm-frontend-eight-phi.vercel.app/
 
-## Available Scripts
+Technologies
+NodeJS
+JavaScript
+React
+Express
+Mongoose
 
-In the project directory, you can run:
+Demo Video
+https://drive.google.com/file/d/1JWr-FwhAWZoTFN7PJMTZYdQDF-kbHwrK/view?usp=sharing
 
-### `npm start`
+Frontend (React) Checklist
+Lead Management
+Implement a LeadForm with necessary input fields:
+Lead Name (Customer or company name)
+Lead Source (Dropdown: Website, Referral, etc.)
+Assigned Sales Agent (Dropdown selection)
+Lead Status (Dropdown: New, Contacted, etc.)
+Tags (Multi-select for categorization)
+Time to Close (Estimated closure time)
+Priority (High, Medium, Low)
+Ensure proper validation on form submission.
+Lead List & Filters
+Fetch and display leads dynamically (GET /leads).
+Implement URL-based filtering (e.g., /leads?salesAgent=John&status=Qualified).
+Sorting options for closing date & priority.
+Lead Details & Actions
+Show detailed lead information.
+Enable status updates & reassignment.
+Comments Section for agent updates.
+LeadStatusView (Grouped by status).
+SalesAgentView (Grouped by agent).
+Reporting & Analytics
+Leads Closed Last Week visualization.
+Total Leads in Pipeline.
+Lead Status Distribution in charts.
+Chart.js integration for reporting.
+Backend (Express + MongoDB) Checklist
+API Endpoints
+Leads Management
+POST /leads - Create a lead.
+GET /leads - Fetch leads with filters.
+PATCH /leads/:id - Update lead details.
+DELETE /leads/:id - Remove lead.
+Sales Agents
+POST /agents - Add a sales agent.
+GET /agents - Retrieve all agents.
+Comments
+POST /leads/:id/comments - Add lead comment.
+GET /leads/:id/comments - View comments.
+Reports
+GET /report/last-week - Fetch closed leads.
+GET /report/pipeline - Leads currently active.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Key Features
+Lead Workflow Management with structured status updates.
+Sales Agent Assignment & Updates.
+Comments System for lead progress tracking.
+Filtering via URL parameters for better navigation.
+Dashboard & Data Visualization with Chart.js.
