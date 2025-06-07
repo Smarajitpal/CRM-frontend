@@ -83,7 +83,11 @@ GET /report/pipeline - Leads currently active.
 # Key Features
 
 Lead Workflow Management with structured status updates.
+
 Sales Agent Assignment & Updates.
+
 Comments System for lead progress tracking.
+
 Filtering via URL parameters for better navigation.
+
 Dashboard & Data Visualization with Chart.js.
