@@ -62,6 +62,7 @@
   margin: 0.5rem 1rem;
   border: 1px solid black;
   border-radius: 8px;
+  text-align: center;
 }
 
 :hover.addBtn {
@@ -276,5 +277,17 @@
     font-size: 1rem;
     font-style: italic;
     color: chocolate;
+  }
+}
+@media (max-width: 400px) {
+  .left-section,
+  .content {
+    width: 100%;
+  }
+  .left-section {
+    margin-bottom: 1rem;
+  }
+  .body {
+    flex-direction: column;
   }
 }

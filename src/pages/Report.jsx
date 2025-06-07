@@ -33,6 +33,7 @@ function Report() {
     dispatch(fetchAgents());
     dispatch(fetchLeads());
   }, [dispatch]);
+
   const agentsName =
     salesAgent?.length > 0 ? salesAgent.map((s) => s.name) : [];
 
@@ -40,7 +41,10 @@ function Report() {
     salesAgent?.length > 0 && leads?.length > 0
       ? salesAgent.map(
           (agent) =>
-            leads.filter((lead) => lead.salesAgent?._id === agent._id).length
+            leads.filter(
+              (lead) =>
+                lead.salesAgent?._id === agent._id && lead.status === "Closed"
+            ).length
         )
       : Array(salesAgent.length).fill(0);
 
