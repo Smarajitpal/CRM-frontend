@@ -14,7 +14,7 @@ function Home() {
   return (
     <div className="container">
       <div>
-        <h1 className="heading">Zentact CRM Dashboard</h1>
+        <h1 className="heading">Zentact CRM</h1>
       </div>
       <div className="body">
         <div className="left-section">
