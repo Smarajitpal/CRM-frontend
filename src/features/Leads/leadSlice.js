@@ -63,7 +63,11 @@ export const leadSlice = createSlice({
     });
     builder.addCase(fetchLeads.fulfilled, (state, action) => {
       state.status = "success";
-      state.leads = action.payload;
+      if (!action.payload) {
+        state.leads = [];
+      } else {
+        state.leads = action.payload;
+      }
     });
     builder.addCase(fetchLeads.rejected, (state, action) => {
       state.status = "error";
