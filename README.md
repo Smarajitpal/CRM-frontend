@@ -4,7 +4,7 @@ This is a CRM app for leads management.
 
 ## Hosted Link
 
-https://crm-frontend-eight-phi.vercel.app/
+[Demo link] (https://crm-frontend-eight-phi.vercel.app/)
 
 ## Technologies
 
