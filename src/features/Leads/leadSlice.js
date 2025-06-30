@@ -59,7 +59,7 @@ export const leadSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder.addCase(fetchLeads.pending, (state, action) => {
-      state.leads=[];
+      state.leads = [];
       state.status = "loading";
     });
     builder.addCase(fetchLeads.fulfilled, (state, action) => {
